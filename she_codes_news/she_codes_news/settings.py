@@ -39,7 +39,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'users.apps.UsersConfig',
 ]
+
+AUTH_USER_MODEL = 'users.CustomUser'
+# Custom user does not exist at this point. We will now go and create a new models file.
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
