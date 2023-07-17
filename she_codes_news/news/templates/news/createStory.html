@@ -1,9 +1,18 @@
 {% extends "base.html" %}
 {% block content %}
+<div class="form-container">
     <form action="" method="post">
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="POST IT">
+        <div class="form-label">{{ form.title.label }}</div>
+        <div class="form-input">{{ form.title }}</div>
+        <div class="form-label">{{ form.pub_date.label }}</div>
+        <div class="form-input">{{ form.pub_date }}</div>
+        <div class="form-label">{{ form.content.label }}</div>
+        <div class="form-input">{{ form.content }}</div>
+        <div class="form-label">{{ form.image_url.label }}</div>
+        <div class="form-input">{{ form.image_url }}</div>
+        <input type="submit" value="POST IT" class="btn btn-primary">
     </form>
+</div>
 
 {% endblock %}
