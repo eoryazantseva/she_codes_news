@@ -35,9 +35,9 @@
     grid-area: right-3;
 }
 
-#story-card-2 a,
-#story-card-3 a,
-#story-card-4 a {
+#story-card-2 .card-wrapper,
+#story-card-3 .card-wrapper,
+#story-card-4 .card-wrapper{ 
     display: flex;
     max-height: 120px;
     width: 100%;

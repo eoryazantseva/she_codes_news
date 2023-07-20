@@ -1,0 +1,14 @@
+<!-- news/templates/news/author_stories.html -->
+
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2>Articles by Author ID: {{ author_id }}</h2>
+    <ul>
+        {% for story in author_stories %}
+        <li>
+            {% include "./storyCard.html" with story=story %}
+        </li>
+        {% endfor %}
+    </ul>
+{% endblock %}
