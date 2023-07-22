@@ -4,6 +4,7 @@ from django.views import generic
 from django.urls import reverse_lazy
 from .models import NewsStory
 from .forms import StoryForm
+from django.contrib.auth.mixins import LoginRequiredMixin
 
 
 class IndexView(generic.ListView):
@@ -27,25 +28,10 @@ class AuthorView(generic.ListView):
         author_id = self.kwargs.get('author_id')
         return NewsStory.objects.filter(author=author_id)
     
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     context['latest_stories'] = NewsStory.objects.all().order_by('-pub_date')[:4]
-    #     return context
-
-# maybe delete later
-# def author_stories(self):
-#         author_id = self.kwargs.get('author_id')
-#         return NewsStory.objects.filter(author=author_id)
-
-    # def get_context_data(self, **kwargs):
-    #     context = super().get_context_data(**kwargs)
-    #     author_id = self.kwargs.get('author_id')
-    # #     # get the author id from the kwargs url: news/author/1
-    # #     author_id = 1
-    # #     # get all the news stories with author_id = 1
-    #     context['author_stories'] = NewsStory.objects.all().filter(author_id=author_id)
-    #     return context
-    
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['allowEdit'] = True
+        return context
 
 
 
@@ -54,7 +40,8 @@ class StoryView(generic.DetailView):
     template_name = 'news/story.html'
     context_object_name = 'story'
 
-class AddStoryView(generic.CreateView):
+
+class AddStoryView(LoginRequiredMixin, generic.CreateView):
     form_class = StoryForm
     context_object_name = 'storyform'
     template_name = 'news/createStory.html'
@@ -63,3 +50,4 @@ class AddStoryView(generic.CreateView):
     def form_valid(self, form):
         form.instance.author = self.request.user
         return super().form_valid(form)
+    
