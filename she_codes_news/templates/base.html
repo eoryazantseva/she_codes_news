@@ -16,13 +16,19 @@
 
     <body>
         <header>
-            <div id="header-text">
-                <a id="header-link" href="{% url 'news:index' %}">
-                    <h1>She {Codes} News</h1>
+            <div id="mobile-header">
+                <a id="header-link" href="{% url 'news:index' %}"></a>
+                    <img src="../static/images/she_codes_news_logo.png" alt="The SheCodesNews logo" class="logo">
                 </a>
+                <button class="hamburger-button">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5" />
+                    </svg>
+                </button>
             </div>
             {% include './nav.html' %}
         </header>
         {% block content %} {% endblock %}
+        <script src="../static/js/scripts.js"></script>
     </body>
 </html>

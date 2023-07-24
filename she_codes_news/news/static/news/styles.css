@@ -1,3 +1,5 @@
+
+
 .story-card {
     margin: 2px;
     border: 1px solid #000;
@@ -19,6 +21,11 @@
     max-height: 500px;
 }
 
+#latest-stories #story-card-2 img,
+#latest-stories #story-card-3 img,
+#latest-stories #story-card-4 img {
+    max-width: 160px;
+}
 #story-card-1 {
     grid-area: left-1;
 }
@@ -48,12 +55,14 @@
 #story-card-3 .story-card-text h3,
 #story-card-4 .story-card-text h3 {
     font-size: 16px;
+    margin: 5px;
 }
 
 #story-card-2 .story-card-text h4,
 #story-card-3 .story-card-text h4,
 #story-card-4 .story-card-text h4 {
     font-size: 12px;
+    margin: 5px;
 }
 
 #story-card-2 img,

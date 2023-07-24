@@ -1,61 +1,196 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Raleway&display=swap');
 
 :root {
 	--orange: #FC4C02;
 	--blue: #011A70;
-	--black: #36394D;
-	--purple: #E1E7FF;
-    --heading-font-family: 'Bebas Neue', sans-serif;
-    --default-font-family: 'Poppins', sans-serif;
+	--purple: #6300AF;
+    --global-color-text: #3F3F3F;
+    --heading-font-family:'Bebas Neue', sans-serif;
+    --default-font-family: 'Raleway', sans-serif;
+}
+/* CSS Reset */
+
+html {
+	box-sizing: border-box;
+	font-size: 16px;
+	font-family: var(--default-font-family);
+	/* color: var(--global-color-text); */
+	scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: var(--heading-font-family);
+    letter-spacing: 0.05em;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ol,
+ul {
+	padding: 0;
+    text-decoration: none;
+}
+
+ol,
+ul {
+	list-style: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+
+
+/* Global styles */
+
+label, input, textarea, select {
+    display: block;
+    width: 100%;
+}
+input, select, textarea {
+    padding: 8px;
+    border-color: var(grey);
 }
 
 body {
-    background-color: rgb(240, 239, 239);
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 1px solid #000;
+    background-color: white;
 }
 
 h1 {
-    font-family: var(--heading-font-family);
-    text-decoration: none;
     font-size: 4rem;
-    margin: 0;
+}
+h2, h3 {
+    color: var(--purple);
 }
 
-h2 {
-font-family: var(--heading-font-family); 
+/* Navigation styling  */
+
+
+.desktop-nav {
+    display: none;
 }
 
-h3 {
-    font-size: 2rem;
-    margin: 0;
+.mobile-nav {
+    display: none;
 }
 
-#header-text {
-    flex-basis: 80%;
-    display: flex;
+header ul a{
+    margin: 0 20px;
+    font-size: 24px;
 }
 
+/* For JS hamburger button */
+
+.display-block {
+    display: block;
+}
+
+@media (min-width:768px) {
+    .desktop-nav {
+        display: block;
+    }
+}
+
+.mobile-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 4px 16px;
+}
 nav {
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
+    display: none;
 }
+
+header button {
+    all: unset;
+}
+@media (min-width:768px) {
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--purple);
+        background-color: white;
+        margin: 15px 10px;
+        padding-bottom: 15px;
+    }
+
+    header a {
+        text-decoration: none;
+    }
+    nav {
+        display: inline-block;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 24px;
+        margin-right: 16px;
+    }
+
+    .hamburger-icon {
+        display: none;
+    }
+}
+.logo, .hamburger-icon {
+    height: 50px;
+}
+.mobile-header {
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid var(--purple);
+    background-color: white;
+    margin: 15px 10px;
+}
+
+
+
 
 a {
-    margin: 2px;
     text-decoration: none;
-    color: #000;
+    color: var(--global-color-text);
 }
 
-a, p {
-    font-family: monospace;
+nav a {
+    font-family: var(--heading-font-family);
+    color: var(--purple);
+}
+
+h3 a {
+    color: var(--purple);
+}
+
+h4, p {
+    font-family: var(--default-font-family)
 }
 
 /* form styling */
