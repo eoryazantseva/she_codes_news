@@ -19,6 +19,7 @@
     gap: 1px 1px;
     grid-template-areas: "left-1 right-1" "left-1 right-2" "left-1 right-3";
     max-height: 500px;
+    margin: 15px 15px;
 }
 
 #latest-stories #story-card-2 img,
@@ -77,6 +78,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: 15px 15px;
 }
 
 #all-stories .story-card {

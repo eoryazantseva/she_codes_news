@@ -17,8 +17,8 @@
     <body>
         <header>
             <div id="mobile-header">
-                <a id="header-link" href="{% url 'news:index' %}"></a>
-                    <img src="../static/images/she_codes_news_logo.png" alt="The SheCodesNews logo" class="logo">
+                <a id="header-link" href="{% url 'news:index' %}">
+                    <img src="{% static 'images/she_codes_news_logo.png' %}" alt="The SheCodesNews logo" class="logo">
                 </a>
                 <button class="hamburger-button">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hamburger-icon">

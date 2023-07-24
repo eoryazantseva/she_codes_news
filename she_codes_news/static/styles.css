@@ -82,6 +82,8 @@ input, select, textarea {
 
 body {
     background-color: white;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -89,6 +91,10 @@ h1 {
 }
 h2, h3 {
     color: var(--purple);
+}
+h2 {
+    font-size: 2rem;
+    margin: 25px 15px;
 }
 
 /* Navigation styling  */
@@ -104,7 +110,7 @@ h2, h3 {
 
 header ul a{
     margin: 0 20px;
-    font-size: 24px;
+    font-size: 20px;
 }
 
 /* For JS hamburger button */
@@ -138,7 +144,8 @@ header button {
         align-items: center;
         border-bottom: 1px solid var(--purple);
         background-color: white;
-        margin: 15px 10px;
+        max-width: 1200px;
+        margin: 15px auto;
         padding-bottom: 15px;
     }
 
@@ -153,6 +160,10 @@ header button {
         display: flex;
         gap: 24px;
         margin-right: 16px;
+    }
+
+    header .logo {
+        margin-left: 20px;
     }
 
     .hamburger-icon {
@@ -196,16 +207,16 @@ h4, p {
 /* form styling */
 
 .form-container {
-    max-width: 400px;
+    max-width: 600px;
     margin: 0 auto;
-    padding: 20px;
-    margin: 50px auto;
+    margin: 15px 15px;
 }
 
 .form-label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+    color: var(--purple);
 }
 
 label {
@@ -221,7 +232,7 @@ label {
     text-decoration: none;
     border: none;
     display: inline-block;
-    background: var(--blue);
+    background: var(--purple);
     border-radius: 4px;
     color: white;
     font-family: var(--heading-font-family);
@@ -235,6 +246,6 @@ label {
 .btn-primary:hover {
     color: white;
     scale: 1.02;
-    background: var(--blue);
-    border: solid 1px var(--blue);
+    background: var(--purple);
+    border: solid 1px var(--purple);
 }
