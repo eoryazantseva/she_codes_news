@@ -5,6 +5,8 @@ from django.urls import reverse_lazy
 from .models import NewsStory
 from .forms import StoryForm
 from django.contrib.auth.mixins import LoginRequiredMixin
+from django.shortcuts import render, get_object_or_404, redirect
+from django.contrib.auth.decorators import login_required
 
 
 class IndexView(generic.ListView):
@@ -51,3 +53,26 @@ class AddStoryView(LoginRequiredMixin, generic.CreateView):
         form.instance.author = self.request.user
         return super().form_valid(form)
     
+
+@login_required
+
+def edit_story(request, story_id):
+    story = get_object_or_404(NewsStory, id = story_id)
+    if request.method == 'POST':
+        form = StoryForm(request.POST, instance=story)
+        if form.is_valid():
+            form.save()
+            return redirect('news:story', story_id=story.id)
+    else:
+        form = StoryForm(instance=story)
+    return render(request, 'news/edit_story.html', {'form': form})
+
+
+@login_required
+
+def delete_story(request, story_id):
+    story = get_object_or_404(NewsStory, id = story_id)
+    if request.method == 'POST':
+        story.delete()
+        return render(request, 'news/story_deleted.html')
+    return render(request, 'news/delete_story.html', {'story':story})

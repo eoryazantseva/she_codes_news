@@ -204,11 +204,14 @@ h4, p {
     font-family: var(--default-font-family)
 }
 
+p {
+    margin: 0 15px;
+}
+
 /* form styling */
 
 .form-container {
     max-width: 600px;
-    margin: 0 auto;
     margin: 15px 15px;
 }
 
