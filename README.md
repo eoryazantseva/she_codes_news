@@ -72,8 +72,8 @@ Now make the initial migrations:
 - "Log-out" button only visible when a user *is* logged in:
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/d8297931-c153-4784-8203-28dc1e28e265)
 - "Create Story" functionality only available when user is logged in:
-  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/4121a72a-4b9a-41b8-b213-71b088f388b5)
-  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/78dd44f5-0434-4761-89e7-a5ba228997fc)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/d57594a2-65bf-4786-950b-47f1fac2e638)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/2df2db04-0c21-4861-ba79-214187028bae)
 
 
 ## Additional Features:
