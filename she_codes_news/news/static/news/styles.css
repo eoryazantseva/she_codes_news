@@ -91,7 +91,15 @@
 }
 
 #story-content img {
-    float: right;
+    /* float: right; */
+    border-radius: 10px;
     margin: 0 0 10px 10px;
-    width: 50%;
+    max-width: 100%;
+}
+
+.story-text {
+    font-size: 20px;
+    font-family: var(--default-font-family);
+    line-height: 1.5;
+    margin: 20px 0;
 }

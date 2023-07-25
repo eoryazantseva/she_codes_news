@@ -29,7 +29,6 @@ html {
 h1,
 h2,
 h3,
-h4,
 h5,
 h6 {
     font-family: var(--heading-font-family);
@@ -200,8 +199,12 @@ h3 a {
     color: var(--purple);
 }
 
+h4 {
+    margin: 15px;
+}
+
 h4, p {
-    font-family: var(--default-font-family)
+    font-family: var(--default-font-family);
 }
 
 p {

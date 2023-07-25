@@ -43,12 +43,26 @@ class AuthorView(generic.ListView):
         
         context['allowEdit'] = True
         return context
+    
+
+
+
+
 
 
 class StoryView(generic.DetailView):
     model = NewsStory
     template_name = 'news/story.html'
     context_object_name = 'story'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['author_username'] = self.object.author.username
+        return context
+
+
+
+
 
 
 class AddStoryView(LoginRequiredMixin, generic.CreateView):
