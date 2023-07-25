@@ -1,12 +1,26 @@
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %}
+
 {% block content %}
     <h2>Edit Story</h2>
     <div class="form-container">
         <form method="post">
             {% csrf_token %}
-            {{ form.as_p }}
-            <button type="submit">Save</button>
+            <div class="form-label">{{ form.title.label }}</div>
+            <div class="form-input">{{ form.title }}</div>
+            <div class="form-label">{{ form.pub_date.label }}</div>
+            <div class="form-input">{{ form.pub_date }}</div>
+            <div class="form-label">{{ form.content.label }}</div>
+            <div class="form-input">{{ form.content }}</div>
+            <div class="form-label">{{ form.image_url.label }}</div>
+            <div class="form-input">{{ form.image_url }}</div>
+            <input type="submit" value="SAVE" class="btn btn-primary">
         </form>
     </div>
 {% endblock %}
+

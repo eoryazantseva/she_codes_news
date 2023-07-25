@@ -7,6 +7,7 @@ from .forms import StoryForm
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.shortcuts import render, get_object_or_404, redirect
 from django.contrib.auth.decorators import login_required
+from users.models import CustomUser
 
 
 class IndexView(generic.ListView):
@@ -32,9 +33,16 @@ class AuthorView(generic.ListView):
     
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
+        author_id = self.kwargs.get('author_id')
+
+        try:
+            author = CustomUser.objects.get(pk=author_id)
+            context['author_username'] = author.username
+        except CustomUser.DoesNotExist:
+            context['author_username'] = ""
+        
         context['allowEdit'] = True
         return context
-
 
 
 class StoryView(generic.DetailView):

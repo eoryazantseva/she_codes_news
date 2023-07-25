@@ -224,6 +224,8 @@ p {
 
 label {
     font-family: var(--default-font-family);
+    margin-top: 15px;
+    margin-bottom: 10px;
 }
 
 .form-input {
@@ -242,7 +244,7 @@ label {
     font-size: 18px;
     line-height: 27px;
     padding: 10px 20px;
-    margin: 10px 2px;
+    margin: 15px 10px 15px 0;
     transition: all 100ms ease-in-out;
 }
 

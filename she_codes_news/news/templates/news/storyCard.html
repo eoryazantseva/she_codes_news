@@ -11,8 +11,8 @@
                 </h4>
             <h4>{{ story.pub_date|date:'d/m/Y H:i A' }}</h4>
             {% if story.author.id == user.id and allowEdit == True %}
-                <button><a href="{% url 'news:edit_story' story.id %}">Edit</a></button>
-                <button><a href="{% url 'news:delete_story' story.id %}">Delete</a></button>
+                <a href="{% url 'news:edit_story' story.id %}"><button class="btn-primary">  Edit  </button></a>
+                <a href="{% url 'news:delete_story' story.id %}"><button class="btn-primary">Delete</button></a>
             {% endif %}
         </div>
     </div>

@@ -2,13 +2,21 @@
 
 {% extends 'base.html' %}
 
+{% load static %}
+
+{% block stylesheets %}
+<link rel="stylesheet" type="text/css" href="{% static 'news/styles.css' %}">
+{% endblock %}
+
 {% block content %}
-    <h2>Articles by Author: {{ author_id }}</h2>
-    <ul>
-        {% for story in author_stories %}
-        <li>
-            {% include "./storyCard.html" with story=story %}
-        </li>
-        {% endfor %}
-    </ul>
+<h2>Articles by {{ author_username }}:</h2>
+<div id="all-stories">
+    {% if author_stories %}
+    {% for story in author_stories %}
+    {% include "./storyCard.html" with story=story %}
+    {% endfor %}
+    {% else %}
+    <p>No stories by this author are available.</p>
+    {% endif %}
+</div>
 {% endblock %}
