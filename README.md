@@ -45,7 +45,7 @@ Now make the initial migrations:
 
 ## Database Schema
 
-![ ERD ]( {{ ./erd.drawio.png }} )
+![ ERD ](https://github.com/eoryazantseva/she_codes_news/blob/main/erd.drawio.png)
 
 ## Project Features 
 
