@@ -57,12 +57,14 @@ Now make the initial migrations:
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/cd0a032f-beda-4e22-839a-71fcde7552a6)
 
 - Log-in/Log-out:
-  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/e2615494-6980-4f07-9196-3e382ae17239)
-  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/182fe83e-01a3-40a5-9408-e1803349634b)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/a288790c-0328-4f01-b74d-3829c7007679)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/36a44ae2-c101-4318-a626-4ee36006f1b7)
+
 - "Account view" page:
   [ ] 
 - "Create Account" page:
-  [ ] 
+- ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/23281ac7-2f23-4f8b-a30e-137addfb7e59)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/12446166-61be-4a04-8a80-1e6089136a99)
 - View stories by author:
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/d98c3adc-2838-4df3-800a-0edf49b015e7)
 - "Log-in" button only visible when no user is logged in/:
