@@ -80,3 +80,7 @@ Now make the initial migrations:
 - Add the ability to update and delete stories (consider permissions - whoshould be allowed to update or and/or delete stories):
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/c32cb670-422e-4870-a3b6-47f954f24b48)
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/7bb76109-5a94-44b6-b786-d163f05fda7c)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/1c243432-b228-4156-abda-9555b4ae6abc)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/379386fc-3ff9-443c-8f57-a52058613985)
+
+
