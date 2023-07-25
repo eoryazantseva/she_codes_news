@@ -49,7 +49,7 @@ Now make the initial migrations:
 
 ## Project Features 
 
-- [<img width="500" alt="image" src="https://github.com/eoryazantseva/she_codes_news/assets/93800981/c567e693-6e82-452a-866f-9b9dac4928c2">] Order stories by date
+- [![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/fceb92da-30d4-4a36-befe-fce1df7fd1d3)] Order stories by date
 - [ ] Styled "new story" form
 - [ ] Story images
 - [ ] Log-in/log-out
