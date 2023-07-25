@@ -68,9 +68,9 @@ Now make the initial migrations:
 - View stories by author:
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/d98c3adc-2838-4df3-800a-0edf49b015e7)
 - "Log-in" button only visible when no user is logged in/:
-  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/ccd3fbce-9553-4ed7-83e4-ac0020e2bee6)
-- "Log-out" buttononly visible when a user *is* logged in:
-  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/6343f559-5928-4360-ae76-e39b638189ea)
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/cc181c2c-6738-4fe1-879c-c33bc24688ad)
+- "Log-out" button only visible when a user *is* logged in:
+  ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/d8297931-c153-4784-8203-28dc1e28e265)
 - "Create Story" functionality only available when user is logged in:
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/4121a72a-4b9a-41b8-b213-71b088f388b5)
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/78dd44f5-0434-4761-89e7-a5ba228997fc)
