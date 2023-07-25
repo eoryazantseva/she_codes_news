@@ -61,7 +61,8 @@ Now make the initial migrations:
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/36a44ae2-c101-4318-a626-4ee36006f1b7)
 
 - "Account view" page:
-  [ ] 
+   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/e3704857-0440-4e95-9332-f2edcfec0ed4)
+
 - "Create Account" page:
 - ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/23281ac7-2f23-4f8b-a30e-137addfb7e59)
   ![image](https://github.com/eoryazantseva/she_codes_news/assets/93800981/12446166-61be-4a04-8a80-1e6089136a99)
