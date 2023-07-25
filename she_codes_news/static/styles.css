@@ -257,3 +257,12 @@ label {
     background: var(--purple);
     border: solid 1px var(--purple);
 }
+
+/* Create Account Page */
+
+.create-account {
+    text-decoration: underline;
+    font-size: 25px;
+    font-family: var(--default-font-family);
+    margin: 15px;
+}

@@ -3,8 +3,9 @@
 
 {% block content %}
 
+<h2>Login</h2>
+
 <div class="form-container">
-    <h2>Login</h2>
     <form method="post">
         {% csrf_token %}
         <div class="form-label">{{ form.username.label_tag }}</div>
@@ -14,5 +15,6 @@
         <button type="submit" class="btn btn-primary">Login</button>
     </form>
 </div>
-{% endblock %}
 
+<a href="{% url 'users:createAccount' %}" class="create-account">Create Account</a>
+{% endblock %}
